@@ -16,6 +16,7 @@ h1{
     color: #3F3D56;
 }
 
+
 h2{
     font-size: 16px;
     color: #5A6256;
@@ -35,16 +36,7 @@ h2{
     margin-bottom: 22px;
 }
 
-.content-register button{
-    border-radius: 5px;
- 
-}
 
-.content-register button:hover, .content button:hover{
-    background-color: #3f3d56e8;;
-    transition: 300ms;
-    box-shadow: 0px 0px 8px black;
-}
 
 
 .options-reg a{
@@ -118,8 +110,21 @@ button{
     padding: 14px;
     border: none;
     color: white;
+    font-weight: 700;
     background-color: #3F3D56;
+    /*background-image: linear-gradient(to bottom right,#3F3D56,#ABB3A8);*/
     font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #ABB3A8;
+}
+
+
+
+
+
+button:hover{
+    box-shadow: 0px 0px 8px #3F3D56;
+    
 }
 
 .options, .area-keepconected, .checkbox-EULA{
@@ -160,7 +165,7 @@ button{
     justify-content: space-between;    
 }
 
-.genre-options input:hover{
+.genre-options{
     box-shadow: none;
 }
 
@@ -275,28 +280,34 @@ select:hover, input:hover{
 }
 
 
-/* Tentativa de responsivar a tela utilizando background para checar se o @media funcionava*/
-/* Telas menores que 1000px o @media não funcionou no meu código*/
-@media screen and (max-width: 1100px) {
-
-    html {
-      background-color: red;
-    }
-       
-}
-
-@media screen and (max-width: 1000px) {
-
-    html {
-      background-color: blue;
-    }
-       
-}
 
 @media screen and (max-width: 900px) {
+/* nada  a fazer*/
+    
+}
 
-    html {
-      background-color: grey;
+@media screen and (max-width: 530px) {
+
+    .content-index{
+        width: 90%;
     }
        
 }
+
+
+@media screen and (max-width: 420px) {
+    .content{
+        width: 90%;
+    }
+    .content h2{
+        margin: 0px 0px 20px 0px;
+    }
+
+    .box-coutry select, .box-bday input{
+        width: 98%;
+    }
+
+   
+}
+
+
